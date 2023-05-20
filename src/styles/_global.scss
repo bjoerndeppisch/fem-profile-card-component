@@ -2,15 +2,26 @@
 @use 'abstract' as *;
 
 /* Debugging */
-*,
-*::before,
-*::after {
-  // outline: 1px solid limegreen !important;
-  // background: rgba(0, 100, 0, 0.1) !important;
-}
+// *,
+// *::before,
+// *::after {
+//   outline: 1px solid limegreen !important;
+//   background: rgba(0, 100, 0, 0.1) !important;
+// }
 
 body {
-  // background-color: var(--clr-background);
+  background-color: var(--clr-primary-01);
+  background-image: url(../assets/bg-pattern-top.svg),
+    url(../assets/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right 50vw bottom 40vh, left 40vw top 40vh;
+
   font-family: var(--ff-sans);
   font-size: rem(18);
+  color: var(--clr-primary-02);
+  line-height: 1.2;
+}
+
+main {
+  width: clamp-builder(325, 350);
 }

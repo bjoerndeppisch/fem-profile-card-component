@@ -1,2 +1,60 @@
 /* Components */
 @use 'abstract' as *;
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: var(--clr-white);
+  text-align: center;
+
+  &__illustration {
+    height: 140px;
+    background-image: url(../assets/bg-pattern-card.svg);
+  }
+
+  &__photo {
+    border: 5px solid var(--clr-white);
+    border-radius: 50%;
+    margin-block-start: -52px;
+    margin-inline: auto;
+  }
+
+  &__heading {
+    margin-block-start: rem(24);
+    font-size: rem(18);
+
+    & span {
+      font-weight: var(--fw-regular);
+      color: var(--clr-primary-03);
+    }
+  }
+
+  &__paragraph {
+    margin-block-start: rem(8);
+    font-size: rem(14);
+    color: var(--clr-primary-03);
+  }
+}
+
+.stats {
+  margin-block-start: rem(24);
+  border-block-start: 1px solid var(--clr-neutral-02);
+  padding: rem(24);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  &__item {
+    text-align: center;
+  }
+
+  &__item p:nth-child(1) {
+    font-weight: var(--fw-bold);
+  }
+
+  &__item p:nth-child(2) {
+    margin-block-start: rem(8);
+    color: var(--clr-primary-03);
+    font-size: rem(10);
+    letter-spacing: 1.5px;
+  }
+}
