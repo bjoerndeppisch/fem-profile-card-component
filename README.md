@@ -8,8 +8,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- [Soulution]()
-- [Live Site]()
+- [Soulution](https://www.frontendmentor.io/solutions/profile-card-sass-bem-grid-flexbox-fluid-sizing-custom-properties-vite-RLBT6sH0Tt)
+- [Live Site](https://bjoerndeppisch-fem-profile-card.netlify.app/)
 
 ### Built with
 
